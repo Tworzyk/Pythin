@@ -1,14 +1,18 @@
 import cmath
 
 def solve_quadratic(a, b, c):
-    # Calculate the discriminant
-    d = cmath.sqrt(b**2 - 4*a*c)
+
+if(b**2 - 4*a*c < 0 )
+{
+    return null
+}
     
-    # Calculate the two solutions
+    d = cmath.sqrt(b**2 - 4*a*c)
+  
     x1 = (-b + d) / (2*a)
     x2 = (-b - d) / (2*a)
     
-    # Remove the imaginary part if it's zero
+
     if x1.imag == 0:
         x1 = x1.real
     if x2.imag == 0:
