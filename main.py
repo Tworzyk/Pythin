@@ -13,8 +13,13 @@ def solve_quadratic(a, b, c):
         x1 = x1.real
     if x2.imag == 0:
         x2 = x2.real
-    
+    if(x1 == x2)
+    {
+        return x1;
+    }
+    else{
     return tuple(sorted([x1, x2], key=lambda x: (x.real, x.imag)))
+    }
 
 try:
     a = float(input("Enter coefficient a: "))
