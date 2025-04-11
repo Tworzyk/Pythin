@@ -2,10 +2,9 @@ import cmath
 
 def solve_quadratic(a, b, c):
 
-if(b**2 - 4*a*c < 0 )
-{
-    return null
-}
+if (b**2 - 4*a*c) < 0 :
+    return None
+
     
     d = cmath.sqrt(b**2 - 4*a*c)
   
@@ -17,13 +16,11 @@ if(b**2 - 4*a*c < 0 )
         x1 = x1.real
     if x2.imag == 0:
         x2 = x2.real
-    if(x1 == x2)
-    {
-        return x1;
-    }
-    else{
+    if x1 == x2:
+        return x1
+    else:
     return tuple(sorted([x1, x2], key=lambda x: (x.real, x.imag)))
-    }
+    
 
 try:
     a = float(input("Enter coefficient a: "))
